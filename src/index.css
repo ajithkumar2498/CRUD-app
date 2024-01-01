@@ -1,3 +1,27 @@
 .pointer{
     cursor: pointer;
 }
+h2 {
+    font-family: Impact, "Arial Narrow Bold", sans-serif;
+    padding: 50px;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(17, 19, 147), #ffff 35%, #e00a95);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 75%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 70%;
+    }
+  }
