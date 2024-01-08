@@ -16,13 +16,11 @@ function Edit() {
 // Handle Edit => Edit the Data and Update using put Method 
   const handleEdit = async () => {
     try {
-      let res = await axios.put(
-        `${Data_URl}/${params.id} `, {
+      let res = await axios.put(`${Data_URl}/${params.id} `, {
           Name,
           userName,
           email,
           Phone
-
         });
         
       if (res.status === 200) {

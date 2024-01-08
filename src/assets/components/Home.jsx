@@ -9,15 +9,14 @@ function Home() {
   const [rowdata, setRowdata] = useState([]);
   const getData = async () => {
     try {
-      const result = await axios.get(Data_URl);
+      const result = await axios.get("https://65474f42902874dff3ac261f.mockapi.io/New");
+      console.log(result)
       setRowdata(result.data);
     } catch (error) {
       console.log(error);
     }
   };
-  useEffect(() => {
-    getData();
-  }, []);
+  useEffect(() => {    getData();  }, []);
   // handleDelete => delete the existing data from Mock api
   const handleDelete = async (e) => {
     try {
